@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 03, 2022 at 03:58 PM
+-- Generation Time: Feb 03, 2022 at 04:03 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -20,6 +20,22 @@ SET time_zone = "+00:00";
 --
 -- Database: `webshop`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `customer`
+--
+
+CREATE TABLE `customer` (
+  `name` varchar(21) NOT NULL,
+  `streetname` varchar(21) NOT NULL,
+  `houseNr` int(11) NOT NULL,
+  `postalCode` varchar(6) NOT NULL,
+  `email` varchar(52) NOT NULL,
+  `phoneNr` int(21) NOT NULL,
+  `paymentMethod` varchar(16) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
