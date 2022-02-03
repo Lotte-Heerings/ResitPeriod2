@@ -33,6 +33,7 @@ CREATE TABLE `customer` (
   `houseNr` int(11) NOT NULL,
   `postalCode` varchar(6) NOT NULL,
   `email` varchar(52) NOT NULL,
+  `password` varchar(52) NOT NULL,
   `phoneNr` int(21) NOT NULL,
   `paymentMethod` varchar(16) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
